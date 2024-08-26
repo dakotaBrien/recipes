@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakota's Recipes</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="site-name">Dakota's Recipes</h1>
+        <h2 id="home-button"><a href="index"><img src="images/home.png" height="50px"></a></h2>
+    </header>
+    <h3>Tuna Sandwich</h3>
+    <img src="images/Tuna Sandwich.jpeg" class="recipe-page-image" alt="A tuna salad sandwich on a ciabatta roll. The sandwich is filled with tuna, tomato, onion, and pickles.">
+    <h5>Ingredients:</h5>
+    <ul>
+        <li>1/2 can of tuna</li>
+        <li>1/2 tomato</li>
+        <li>5 black olives</li>
+        <li>3 pickle slices</li>
+        <li>Onion</li>
+        <li>Mayo</li>
+        <li>Mustard</li>
+        <li>Salt</li>
+        <li>Red pepper flakes</li>
+        <li>Olive oil</li>
+        <li>1 ciabatta roll</li>
+    </ul>
+    <h5>Estimated cost: $3</h5>
+    <h5>Directions:</h5>
+    <p class="directions">Slice the tomato and set it to the side. Slice the olives into 3rds and add them to a bowl. Open and drain the can of tuna and add half of it to the bowl along with salt, 1/4 cup of mayo, 2tbsp of mustard and red pepper flakes. Mix well and scoop onto the bottom half of the ciabatta roll. Top with tomato slices, pickles, and thin slices of onions. Lightly drizzle a small amount of olive oil over the veggies before replacing the top half of the ciabatta roll.</p>
+    <footer>
+        <h6 id="copyright"></h6>
+    </footer>
+    <script>
+        today = new Date();
+        document.getElementById("copyright").innerHTML = `Ⓒ${today.getYear() + 1900} Dakota Brien`
+    </script>
+</body>
+</html>

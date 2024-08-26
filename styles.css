@@ -1,0 +1,186 @@
+html {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+}
+
+h1 {
+    color: white;
+    margin-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 5px;
+}
+
+h2 a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #202020, #3d3d3d);
+}
+
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+}
+
+.recipe-image {
+    width: 200px;
+}
+
+.recipe-page-image {
+    width: 300px;
+    float: right;
+}
+
+#recipe-container {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, minmax(400px, 1fr));
+    grid-gap: 50px;
+}
+
+.view-recipe-button {
+    background-color: rgb(29, 29, 29);
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(48, 48, 48);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.view-recipe-button:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.recipe-box {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(5, 5, 5);
+    border: 1px solid rgb(48, 48, 48);
+}
+
+h3 {
+    color: white;
+    margin-top: 150px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    width: 700px;
+}
+
+h4 {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 250px;
+    color: white;
+}
+
+h5 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.directions {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 700px;
+    font-size: 1.1rem;
+}
+
+ul li {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: -20px;
+    font-size: 1.1rem;
+}
+
+ul {
+    min-height: 180px;
+}
+
+@media (max-width: 1250px) {
+    #recipe-container {
+        margin-top: 170px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        grid-gap: 50px;
+    }
+}
+
+@media (max-width: 1020px) {
+    #recipe-container {
+        margin-top: 170px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-gap: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    #recipe-container {
+        margin-top: 170px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        grid-gap: 50px;
+    }
+
+    .directions {
+        width: 400px;
+    }
+
+    h3 {
+        width: 400px;
+    }
+
+    .recipe-page-image {
+        width: 250px;
+    }
+
+    ul li {
+        width: 120px;
+    }
+}

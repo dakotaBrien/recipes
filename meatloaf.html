@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakota's Recipes</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="site-name">Dakota's Recipes</h1>
+        <h2 id="home-button"><a href="index"><img src="images/home.png" height="50px"></a></h2>
+    </header>
+    <h3>Meatloaf</h3>
+    <img src="images/Meatloaf.jpeg" class="recipe-page-image" alt="A classic meatloaf topped with a tangy tomato sauce, served alongside a bed of sautéed zucchini and squash.">
+    <h5>Ingredients:</h5>
+    <ul>
+        <li>1lbs of ground beef</li>
+        <li>8oz can of tomato sauce</li>
+        <li>2 eggs</li>
+        <li>1 zucchini</li>
+        <li>1 squash</li>
+        <li>3 cloves of garlic</li>
+        <li>1/4 of an onion</li>
+        <li>Mustard</li>
+        <li>Olive oil</li>
+        <li>Parmesan cheese</li>
+        <li>Salt</li>
+        <li>Red pepper flakes</li>
+    </ul>
+    <h5>Estimated cost: $10</h5>
+    <h5>Directions:</h5>
+    <p class="directions">Preheat the oven to 375 degrees. Chop the onion and garlic cloves, and slice the zucchini and squash. In a mixing bowl, mix together the ground beef, 3/4 of the can of tomato sauce, eggs, garlic, onion, 2tbsp of mustard, salt and red pepper flakes. Mix well, then shape the mixture into a loaf in a small cake pan. Bake at 375 degrees for 30 minutes. Remove from the oven and pour the remaining tomato sauce over the top of the loaf. Preheat the oven to 450 degrees and bake the meatloaf for an additional 12 minutes. While the meatloaf is baking, pour olive oil into a pan over medium heat. Add the zucchini and squash slices to the pan and let them brown before adding a few dashes of parmesan cheese. Remove the meatloaf from oven and let cool before serving.</p>
+    <footer>
+        <h6 id="copyright"></h6>
+    </footer>
+    <script>
+        today = new Date();
+        document.getElementById("copyright").innerHTML = `Ⓒ${today.getYear() + 1900} Dakota Brien`
+    </script>
+</body>
+</html>
